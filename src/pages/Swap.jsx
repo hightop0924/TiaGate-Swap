@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import { SquidWidget } from '@0xsquid/widget'
 
@@ -9,6 +9,9 @@ export default function Swap() {
     const [currencyTwo, setCurrencyTwo] = useState(false)
     const [currencyDetails, setCurrencyDetails] = useState(false)
     const [swap, setSwap] = useState(false)
+
+    let myRef = useRef(null);
+
     const currencyOneTableData = [
         { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
         { image: 'eth.svg', name: 'Ether', value: '10', symbol: 'ETH' },
@@ -45,7 +48,7 @@ export default function Swap() {
             {/* main content */}
             <section className="main-content">
                 <div className="container main">
-                    <div className="App" style={{ padding: "2rem", width: "auto", height: "auto" }}>
+                    <div className="App h-full w-full">
                         <SquidWidget config={
                             {
                                 companyName: "TIAGate",
@@ -58,7 +61,7 @@ export default function Swap() {
                                     warning: 3,
                                     critical: 5,
                                 },
-                                initialFromChainId: 250,
+                                initialFromChainId: "celestia",
                                 initialToChainId: 1,
                                 "style": {
                                     "neutralContent": "#9DA7B1",
@@ -79,28 +82,36 @@ export default function Swap() {
                                     "roundedDropDown": "0px"
                                 },
                                 // Mark fantom as not coming soon
-                                comingSoonChainIds: [
-                                    // Mainnet
-                                    42161,
-                                    56,
-                                    "cosmoshub-4",
-                                    "crescent-1",
-                                    "injective-1",
-                                    "juno-1",
-                                    "kaiyo-1",
-                                    "osmosis-1",
-                                    "secret-4",
-                                    "phoenix-1",
-                                    "agoric-3",
-                                    "mantle-1",
-                                    "axelar-dojo-1",
-                                    "comdex-1",
-                                    "evmos_9001-2",
-                                    "fetchhub-4",
-                                    "kichain-2",
-                                    "regen-1",
-                                    "umee-1",
-                                ]
+                                // comingSoonChainIds: [
+                                //     // Mainnet
+                                //     42161,
+                                //     56,
+                                //     "cosmoshub-4",
+                                //     "crescent-1",
+                                //     "injective-1",
+                                //     "juno-1",
+                                //     "kaiyo-1",
+                                //     "osmosis-1",
+                                //     "secret-4",
+                                //     "phoenix-1",
+                                //     "agoric-3",
+                                //     "mantle-1",
+                                //     "axelar-dojo-1",
+                                //     "comdex-1",
+                                //     "evmos_9001-2",
+                                //     "fetchhub-4",
+                                //     "kichain-2",
+                                //     "regen-1",
+                                //     "umee-1",
+                                // ],
+                                // availableChains: {
+                                //     source: ["celestia", 1],
+                                //     destination: ["celestia", 1]
+                                // }
+                                availableChains: {
+                                    source: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284],
+                                    destination: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284]
+                                },
                             }} />
                     </div>
                 </div>

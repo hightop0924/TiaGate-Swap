@@ -12,9 +12,9 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
-      <div className="saturn">
+      {/* <div className="saturn">
         <img src="/images/saturn.svg" alt="saturn" />
-      </div>
+      </div> */}
     </div>
   );
 }
