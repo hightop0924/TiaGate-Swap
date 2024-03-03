@@ -46,7 +46,7 @@ export default function Swap() {
             <Sidebar />
 
             {/* main content */}
-            <section className="main-content">
+            <section className="flex flex-col" >
                 <div className="container main">
                     <div className="App h-full w-full">
                         <SquidWidget config={
@@ -76,46 +76,15 @@ export default function Swap() {
                                     "secondary": "#37394C",
                                     "secondaryContent": "#B2BCD3",
                                     "neutral": "#383A4C",
-                                    "roundedBtn": "24px",
+                                    "roundedBtn": "90px",
                                     "roundedCornerBtn": "999px",
                                     "roundedBox": "20px",
-                                    "roundedDropDown": "0px"
+                                    "roundedDropDown": "20px"
                                 },
-                                // Mark fantom as not coming soon
-                                // comingSoonChainIds: [
-                                //     // Mainnet
-                                //     42161,
-                                //     56,
-                                //     "cosmoshub-4",
-                                //     "crescent-1",
-                                //     "injective-1",
-                                //     "juno-1",
-                                //     "kaiyo-1",
-                                //     "osmosis-1",
-                                //     "secret-4",
-                                //     "phoenix-1",
-                                //     "agoric-3",
-                                //     "mantle-1",
-                                //     "axelar-dojo-1",
-                                //     "comdex-1",
-                                //     "evmos_9001-2",
-                                //     "fetchhub-4",
-                                //     "kichain-2",
-                                //     "regen-1",
-                                //     "umee-1",
-                                // ],
-                                // availableChains: {
-                                //     source: ["celestia", 1],
-                                //     destination: ["celestia", 1]
-                                // }
                                 availableChains: {
-                                    source: [5, 421613, 420, 59140, 84531, 43113, 8001, 97, 4002, 5001, 1287, 534351],
-                                    destination: [5, 421613, 420, 59140, 84531, 43113, 8001, 97, 4002, 5001, 1287, 534351]
+                                    source: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284],
+                                    destination: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284]
                                 },
-                                // availableChains: {
-                                //     source: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284],
-                                //     destination: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284]
-                                // },
                                 collectFees: { 
                                     integratorAddress: "0xB529e98A626107335c634B4a905e8317d2250756", 
                                     fee: 30
