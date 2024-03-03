@@ -20,7 +20,7 @@ export default function LandingPage() {
             </div>
             <div className='flex justify-center items-center mt-28'>
                 <span className='text-center font-black  text-white text-5xl'>
-                    AI-POWNERED MULTI-CHAIN <br /> ROUTING AGGREGATOR
+                    AI-POWERED MULTI-CHAIN <br /> ROUTING AGGREGATOR
                 </span>
             </div>
             <div className='flex justify-center mt-5'>

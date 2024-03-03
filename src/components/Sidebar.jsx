@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink, useLocation  } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 export default function Sidebar() {
     // const [menu, setMenu] = useState(false)
@@ -22,12 +22,16 @@ export default function Sidebar() {
                         <img src="/images/close.svg" alt="menu" />
                     </button>
                 </div>
-                
+                {/* <div>
+                    <span className='text-center  text-white text-3xl'>
+                        AI-POWERED MULTI-CHAIN <br /> ROUTING AGGREGATOR
+                    </span>
+                </div> */}
                 <div className="menu-icon">
-                    <button className='collapse-menu-btn' onClick={() => {setCollapseMenu(!collapsemenu)}}>
+                    <button className='collapse-menu-btn' onClick={() => { setCollapseMenu(!collapsemenu) }}>
                         <img src="/images/menu-icon.svg" alt="menu-icon" />
                     </button>
-                    <div className="social-icons" style={{ gap:"1rem" }}>
+                    <div className="social-icons" style={{ gap: "1rem" }}>
                         <a href='/' target="blank">
                             <img src="/images/discord.svg" alt="discord" />
                         </a>

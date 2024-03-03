@@ -44,7 +44,10 @@ a{
 .sidebar{
     padding: 0 20px;
     overflow-x: hidden;
-    background: rgba(14, 14, 14, 0.8);
+    // background: rgba(14, 14, 14, 0.8);
+    background-image: url('../../public/images/sidebar-background.png');
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,7 +190,7 @@ a{
 }
 
 .main-content{
-    // margin-left: 50px;
+    margin-left: 50px;
 }
 .main{
     min-height: 100vh;
@@ -240,7 +243,8 @@ a{
 
 .sidebar.mobile-menu{
     width: 240px;
-    background: rgba(14, 14, 14, 0.8);
+    // background: rgba(14, 14, 14, 0.8);
+    background-image: url('../../public/images/sidebar-background.png');
     left: -100%;
     transition: 0.4s ease-in-out;
 }
