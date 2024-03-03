@@ -51,7 +51,7 @@ export default function Swap() {
                     <div className="App h-full w-full">
                         <SquidWidget config={
                             {
-                                companyName: "TIAGate",
+                                companyName: "SWITCH",
                                 slippage: 1,
                                 integratorId: "tiagate-swap-widget",
                                 infiniteApproval: false,
@@ -61,8 +61,8 @@ export default function Swap() {
                                     warning: 3,
                                     critical: 5,
                                 },
-                                initialFromChainId: "celestia",
-                                initialToChainId: 1,
+                                initialFromChainId: 1,
+                                initialToChainId: 56,
                                 "style": {
                                     "neutralContent": "#9DA7B1",
                                     "baseContent": "#FFFDFD",
