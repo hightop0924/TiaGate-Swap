@@ -47,49 +47,53 @@ export default function Swap() {
 
             {/* main content */}
             <section className="flex flex-col" >
-                <div className="container main">
-                    <div className="App h-full w-full">
-                        <SquidWidget config={
-                            {
-                                companyName: "SWITCH",
-                                slippage: 1,
-                                integratorId: "tiagate-swap-widget",
-                                infiniteApproval: false,
-                                instantExec: false,
-                                apiUrl: "https://api.0xsquid.com",
-                                priceImpactWarnings: {
-                                    warning: 3,
-                                    critical: 5,
-                                },
-                                initialFromChainId: 1,
-                                initialToChainId: 56,
-                                "style": {
-                                    "neutralContent": "#9DA7B1",
-                                    "baseContent": "#FFFDFD",
-                                    "base100": "#5a1270",
-                                    "base200": "#22042b",
-                                    "base300": "#120417",
-                                    "error": "#ED6A5E",
-                                    "warning": "#FFB155",
-                                    "success": "#2EAEB0",
-                                    "primary": "#AB67CB",
-                                    "secondary": "#37394C",
-                                    "secondaryContent": "#B2BCD3",
-                                    "neutral": "#36143F",
-                                    "roundedBtn": "90px",
-                                    "roundedCornerBtn": "999px",
-                                    "roundedBox": "20px",
-                                    "roundedDropDown": "20px"
-                                },
-                                availableChains: {
-                                    source: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284],
-                                    destination: ["celestia", 1, 56, 137, 43114, 42161, 10,8453, 59144, 5000, 534352, 250, 1284]
-                                },
-                                collectFees: { 
-                                    integratorAddress: "0xB529e98A626107335c634B4a905e8317d2250756", 
-                                    fee: 30
-                                }
-                            }} />
+                <div className="flex">
+                    <div className="App swap-padding" style={{ "display": "flex", "justify-content": "center" }}>
+                        <div
+                            style={{ display: "flex", maxWidth: "430px", width: "100%", justifyContent: "center", paddingLeft: "10px", paddingRight: "10px" }}
+                        >
+                            <SquidWidget config={
+                                {
+                                    companyName: "SWITCH",
+                                    slippage: 1,
+                                    integratorId: "tiagate-swap-widget",
+                                    infiniteApproval: false,
+                                    instantExec: false,
+                                    apiUrl: "https://api.0xsquid.com",
+                                    priceImpactWarnings: {
+                                        warning: 3,
+                                        critical: 5,
+                                    },
+                                    initialFromChainId: 1,
+                                    initialToChainId: 56,
+                                    "style": {
+                                        "neutralContent": "#9DA7B1",
+                                        "baseContent": "#FFFDFD",
+                                        "base100": "#5a1270",
+                                        "base200": "#22042b",
+                                        "base300": "#120417",
+                                        "error": "#ED6A5E",
+                                        "warning": "#FFB155",
+                                        "success": "#2EAEB0",
+                                        "primary": "#AB67CB",
+                                        "secondary": "#37394C",
+                                        "secondaryContent": "#B2BCD3",
+                                        "neutral": "#36143F",
+                                        "roundedBtn": "90px",
+                                        "roundedCornerBtn": "999px",
+                                        "roundedBox": "20px",
+                                        "roundedDropDown": "20px"
+                                    },
+                                    availableChains: {
+                                        source: ["celestia", 1, 56, 137, 43114, 42161, 10, 8453, 59144, 5000, 534352, 250, 1284],
+                                        destination: ["celestia", 1, 56, 137, 43114, 42161, 10, 8453, 59144, 5000, 534352, 250, 1284]
+                                    },
+                                    collectFees: {
+                                        integratorAddress: "0xB529e98A626107335c634B4a905e8317d2250756",
+                                        fee: 30
+                                    }
+                                }} />
+                        </div>
                     </div>
                 </div>
             </section>

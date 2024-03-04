@@ -641,6 +641,18 @@ a{
     }
 }
 
+/* For PC: */
+.swap-padding {
+    margin-top : 150px;
+}
+    
+/* For mobile: */
+@media only screen and (max-width: 600px) {
+.swap-padding {
+    margin-top: 100px;
+}
+}
+
 .liquidity{
     padding: 100px 0 30px 0;
     .card{
@@ -1021,6 +1033,7 @@ a{
             }
         }
     }
+    
 }
 
 @import './responsive.scss'
