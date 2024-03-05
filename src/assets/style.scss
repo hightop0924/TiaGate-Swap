@@ -9,6 +9,10 @@ $green: #00CBA1;
     padding: 0;
 }
 
+.tw-rounded-box {
+    font-family: "Source Code Pro", monospace !important;
+}
+
 html{
     font-family: 'Inter', sans-serif;
 }
@@ -196,7 +200,7 @@ a{
     min-height: 100vh;
 }
 .text-gradient{
-    background: linear-gradient(134.08deg, #EEE3FF 28.17%, #FFFFFF 71.73%);
+    background: linear-gradient(134.08deg, #ba37db 28.17%, #FFFFFF 71.73%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
